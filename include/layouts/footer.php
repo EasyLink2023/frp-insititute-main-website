@@ -1,4 +1,15 @@
-
+<style>
+    @media (min-width:767px ){
+        .block-11 .owl-stage{
+            width:auto !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            transform: none !important;
+            justify-content: center !important;
+        }
+        
+    }
+</style>
 <div class="site-section fund-raisers bg-light">
     <div class="container-fluid">
         <div class="col-md-12 block-11 mx-auto">
@@ -20,7 +31,7 @@
                 <div class="block-23">
                     <h3 class="heading-section">Get Connected</h3>
                     <ul>
-                        <li><span class="icon icon-map-marker"></span><span class="text">Chennai, India</span></li>
+                        <li style="margin-bottom:15px !important"><span class="icon icon-map-marker"></span><span class="text">Chennai, India</span></li>
                         <li><a href="#"><span class="icon icon-phone"></span><span class="text">+91 9841426644</span></a></li>
                         <li><a href="#"><span class="icon icon-envelope"></span><span class="text">Chennai, India</span></a></li>
                     </ul>
@@ -63,12 +74,12 @@
                 </div>
             </div>
         </div>
-        <div class="row pt-5">
+        <div class="row">
             <div class="col-md-12 text-center">
                 <p>
                     Copyright &copy;<script>
                         document.write(new Date().getFullYear());
-                    </script> Powered by <a href="https://easylinkindia.com" target="_blank">Easy Link</a>
+                    </script> Powered by <a href="https://easylinkindia.com" target="_blank" style="color: #f7ca44 !important">Easy Link</a>
                 </p>
             </div>
         </div>

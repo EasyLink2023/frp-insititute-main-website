@@ -71,9 +71,9 @@
 <!-- Main Section End Here -->|
 
 <!-- Second Section End Here -->
-<div class="featured-section">
+<div class="mt-4">
     <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-md-6">
                 <img src="<?= BASE_URL ?>assets/images/frp-images/side-image.png" alt="Image placeholder" class="img-fluid">
             </div>
@@ -95,9 +95,9 @@
 <!-- Second Section End Here -->
 
 <!-- Service section starts here -->
-<div class="site-section border-top">
+<div class="site-section ">
     <div class="container">
-        <div class="row mb-5">
+        <div class="row ">
             <div class="col-md-12 mx-auto">
                 <h2 class="section-title text-center">Services</h2>
             </div>
@@ -105,42 +105,42 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-6">
                 <div class="media block-6">
                     <div class="icon"><span class="ion-ios-school"></span></div> <!-- Updated icon -->
                     <div class="media-body">
-                        <h3 class="heading main-text-color font-weight-bold">Skill Development</h3>
-                        <p class="main-text-color">We provide training programs designed to enhance the skills of individuals, preparing them for the challenges of the industry.</p> <!-- Updated text -->
+                        <h3 class="heading font-weight-bold">Skill Development</h3>
+                        <p >We provide training programs designed to enhance the skills of individuals, preparing them for the challenges of the industry.</p> <!-- Updated text -->
                         <p><a href="#" class="link-underline">Learn More</a></p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-6">
                 <div class="media block-6">
                     <div class="icon"><span class="ion-ios-briefcase"></span></div> <!-- Updated icon -->
                     <div class="media-body">
-                        <h3 class="heading main-text-color font-weight-bold">Support to Industry</h3>
-                        <p class="main-text-color">We collaborate with various industries, offering them innovative solutions and resources to enhance their operations.</p> <!-- Updated text -->
+                        <h3 class="heading font-weight-bold">Support to Industry</h3>
+                        <p >We collaborate with various industries, offering them innovative solutions and resources to enhance their operations.</p> <!-- Updated text -->
                         <p><a href="#" class="link-underline">Learn More</a></p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-6">
                 <div class="media block-6">
                     <div class="icon"><span class="ion-ios-contacts"></span></div> <!-- Updated icon -->
                     <div class="media-body">
-                        <h3 class="heading main-text-color font-weight-bold">Collaborations</h3>
-                        <p class="main-text-color">Our partnerships with organizations and educational institutions drive groundbreaking research and development projects.</p> <!-- Updated text -->
+                        <h3 class="heading font-weight-bold">Collaborations</h3>
+                        <p >Our partnerships with organizations and educational institutions drive groundbreaking research and development projects.</p> <!-- Updated text -->
                         <p><a href="#" class="link-underline">Learn More</a></p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-6">
                 <div class="media block-6">
                     <div class="icon"><span class="ion-ios-people"></span></div> <!-- Updated icon -->
                     <div class="media-body">
-                        <h3 class="heading main-text-color font-weight-bold">Members</h3>
-                        <p class="main-text-color">Join our growing community of professionals and experts committed to advancing technology and innovation.</p> <!-- Updated text -->
+                        <h3 class="heading font-weight-bold">Members</h3>
+                        <p >Join our growing community of professionals and experts committed to advancing technology and innovation.</p> <!-- Updated text -->
                         <p><a href="#" class="link-underline">Learn More</a></p>
                     </div>
                 </div>
@@ -151,7 +151,7 @@
 </div>
 <!-- Service section ends here -->
 
-<section class="frp-institute-section bg-white">
+<section class="frp-institute-section ">
     <div class="container">
         <h2 class="section-title text-center">About FRP Institute</h2>
         <div class="row">
