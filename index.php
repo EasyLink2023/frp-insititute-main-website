@@ -111,7 +111,7 @@
                     <div class="media-body">
                         <h3 class="heading font-weight-bold">Skill Development</h3>
                         <p >We provide training programs designed to enhance the skills of individuals, preparing them for the challenges of the industry.</p> <!-- Updated text -->
-                        <p><a href="#" class="link-underline">Learn More</a></p>
+                        <p><a href="skill-development.php" class="link-underline">Learn More</a></p>
                     </div>
                 </div>
             </div>
@@ -121,7 +121,7 @@
                     <div class="media-body">
                         <h3 class="heading font-weight-bold">Support to Industry</h3>
                         <p >We collaborate with various industries, offering them innovative solutions and resources to enhance their operations.</p> <!-- Updated text -->
-                        <p><a href="#" class="link-underline">Learn More</a></p>
+                        <p><a href="support-to-industry.php" class="link-underline">Learn More</a></p>
                     </div>
                 </div>
             </div>
@@ -131,7 +131,7 @@
                     <div class="media-body">
                         <h3 class="heading font-weight-bold">Collaborations</h3>
                         <p >Our partnerships with organizations and educational institutions drive groundbreaking research and development projects.</p> <!-- Updated text -->
-                        <p><a href="#" class="link-underline">Learn More</a></p>
+                        <p><a href="collaborations.php" class="link-underline">Learn More</a></p>
                     </div>
                 </div>
             </div>
@@ -141,7 +141,7 @@
                     <div class="media-body">
                         <h3 class="heading font-weight-bold">Members</h3>
                         <p >Join our growing community of professionals and experts committed to advancing technology and innovation.</p> <!-- Updated text -->
-                        <p><a href="#" class="link-underline">Learn More</a></p>
+                        <p><a href="members.php" class="link-underline">Learn More</a></p>
                     </div>
                 </div>
             </div>
@@ -156,7 +156,7 @@
         <h2 class="section-title text-center">About FRP Institute</h2>
         <div class="row">
             <div class="col-md-4">
-                <a href="#" class="card-link">
+                <a href="objectives.php" class="card-link">
                     <div class="card custom-card">
                         <div class="card-icon">
                             <span class="ion-ios-bookmarks"></span>
@@ -169,7 +169,7 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="#" class="card-link">
+                <a href="administration.php" class="card-link">
                     <div class="card custom-card">
                         <div class="card-icon">
                             <span class="ion-ios-people"></span>
@@ -182,7 +182,7 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="#" class="card-link">
+                <a href="resource-persons.php" class="card-link">
                     <div class="card custom-card">
                         <div class="card-icon">
                             <span class="ion-ios-person"></span>

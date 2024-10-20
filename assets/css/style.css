@@ -2745,3 +2745,7 @@ textarea.form-control {
 .frp-institute-section{
     background-color: #eeeeee !important;
 }
+.sticky-section {
+  position: sticky !important;
+  top: 20px !important; /* Adjust this value to the distance from the top */
+}
