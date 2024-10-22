@@ -185,6 +185,33 @@ $patron_members = [
     session_start();
 } ?>
 <?php include('./include/layouts/headersecond.php'); ?>
+<style>
+    .all-sect{
+        background-color: #25276d;
+        padding: 2em 0;
+        margin: 2em 0;
+    }
+    .bg-card{
+        background-color: #25276d;
+        color: #fff;
+        border: 0px !important;
+    }
+   @media (min-width:1200px) {
+     .card-member{
+        height: 240px;
+     }
+    .card-member .card-title{
+        margin-bottom: 0px !important;
+    }
+    .card-member .card-text{
+        margin-bottom: 10px !important;
+        line-height: 26px;
+    }
+   }
+        
+    
+    
+</style>
 
 <!-- Main Section Start Here -->
 <div class="block-31" style="position: relative;">
@@ -205,118 +232,120 @@ $patron_members = [
 </div>
 
 <!-- Corporate and Donor Members Section -->
-<div class="container mt-4">
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-body">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="corporate-members-tab" data-toggle="tab" data-target="#corporate-members" type="button" role="tab" aria-controls="corporate-members" aria-selected="true">Corporate Members</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="donor-members-tab" data-toggle="tab" data-target="#donor-members" type="button" role="tab" aria-controls="donor-members" aria-selected="false">Donor Members</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="patron-members-tab" data-toggle="tab" data-target="#patron-members" type="button" role="tab" aria-controls="patron-members" aria-selected="false">Patron Members</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="life-member-tab" data-toggle="tab" data-target="#life-member" type="button" role="tab" aria-controls="life-member" aria-selected="false">Life Members</button>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="myTabContent">
-                        <!-- Corporate Members Tab -->
-                        <div class="tab-pane fade show active" id="corporate-members" role="tabpanel" aria-labelledby="corporate-members-tab">
-                            <div class="container my-4">
-                                <div class="row">
-                                    <?php foreach ($corporate_members as $corporate_member): ?>
-                                        <div class="col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title main-text-color"><?= htmlspecialchars($corporate_member['cm']) ?></h5>
-                                                    <p class="card-text main-text-color"><?= htmlspecialchars($corporate_member['company']) ?></p>
-                                                    <?php if (!empty($corporate_member['contact'])): ?>
-                                                        <p class="card-text main-text-color"><strong>Contact:</strong> <?= htmlspecialchars($corporate_member['contact']) ?></p>
-                                                    <?php endif; ?>
+ <div class="all-sect">
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="card bg-card">
+                    <div class="card-body">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="corporate-members-tab" data-toggle="tab" data-target="#corporate-members" type="button" role="tab" aria-controls="corporate-members" aria-selected="true">Corporate Members</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="donor-members-tab" data-toggle="tab" data-target="#donor-members" type="button" role="tab" aria-controls="donor-members" aria-selected="false">Donor Members</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="patron-members-tab" data-toggle="tab" data-target="#patron-members" type="button" role="tab" aria-controls="patron-members" aria-selected="false">Patron Members</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="life-member-tab" data-toggle="tab" data-target="#life-member" type="button" role="tab" aria-controls="life-member" aria-selected="false">Life Members</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <!-- Corporate Members Tab -->
+                            <div class="tab-pane fade show active" id="corporate-members" role="tabpanel" aria-labelledby="corporate-members-tab">
+                                <div class="container my-4">
+                                    <div class="row">
+                                        <?php foreach ($corporate_members as $corporate_member): ?>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card">
+                                                    <div class="card-body card-member">
+                                                        <h5 class="card-title main-text-color"><?= htmlspecialchars($corporate_member['cm']) ?></h5>
+                                                        <p class="card-text main-text-color"><?= htmlspecialchars($corporate_member['company']) ?></p>
+                                                        <?php if (!empty($corporate_member['contact'])): ?>
+                                                            <p class="card-text main-text-color"><strong>Contact:</strong> <?= htmlspecialchars($corporate_member['contact']) ?></p>
+                                                        <?php endif; ?>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    <?php endforeach; ?>
+                                        <?php endforeach; ?>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Donor Members Tab -->
-                        <div class="tab-pane fade" id="donor-members" role="tabpanel" aria-labelledby="donor-members-tab">
-                            <div class="container my-4">
-                                <div class="row">
-                                    <?php foreach ($donor_members as $donor_member): ?>
-                                        <div class="col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title main-text-color"><?= htmlspecialchars($donor_member['dm']) ?></h5>
-                                                    <p class="card-text main-text-color"><?= htmlspecialchars($donor_member['company']) ?></p>
-                                                    <p class="card-text main-text-color"><strong>Contact:</strong> <?= htmlspecialchars($donor_member['contact']) ?></p>
-                                                    <?php if (!empty($donor_member['email'])): ?>
-                                                        <p class="card-text main-text-color"><strong>Email:</strong> <?= htmlspecialchars($donor_member['email']) ?></p>
-                                                    <?php endif; ?>
-                                                    <?php if (!empty($donor_member['website'])): ?>
-                                                        <p class="card-text main-text-color"><strong>Website:</strong> <a href="http://<?= htmlspecialchars($donor_member['website']) ?>" target="_blank"><?= htmlspecialchars($donor_member['website']) ?></a></p>
-                                                    <?php endif; ?>
+                            <!-- Donor Members Tab -->
+                            <div class="tab-pane fade" id="donor-members" role="tabpanel" aria-labelledby="donor-members-tab">
+                                <div class="container my-4">
+                                    <div class="row">
+                                        <?php foreach ($donor_members as $donor_member): ?>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card">
+                                                    <div class="card-body card-member">
+                                                        <h5 class="card-title main-text-color"><?= htmlspecialchars($donor_member['dm']) ?></h5>
+                                                        <p class="card-text main-text-color"><?= htmlspecialchars($donor_member['company']) ?></p>
+                                                        <p class="card-text main-text-color"><strong>Contact:</strong> <?= htmlspecialchars($donor_member['contact']) ?></p>
+                                                        <?php if (!empty($donor_member['email'])): ?>
+                                                            <p class="card-text main-text-color"><strong>Email:</strong> <?= htmlspecialchars($donor_member['email']) ?></p>
+                                                        <?php endif; ?>
+                                                        <?php if (!empty($donor_member['website'])): ?>
+                                                            <p class="card-text main-text-color"><strong>Website:</strong> <a href="http://<?= htmlspecialchars($donor_member['website']) ?>" target="_blank"><?= htmlspecialchars($donor_member['website']) ?></a></p>
+                                                        <?php endif; ?>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    <?php endforeach; ?>
+                                        <?php endforeach; ?>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="tab-pane fade" id="patron-members" role="tabpanel" aria-labelledby="patron-members-tab">
-                            <div class="container my-4">
-                                <div class="row">
-                                    <?php foreach ($patron_members as $patron_member): ?>
-                                        <div class="col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title main-text-color"><?= htmlspecialchars($patron_member['pm']) ?></h5>
-                                                    <p class="card-text main-text-color"><?= htmlspecialchars($patron_member['company']) ?></p>
-                                                    <?php if (!empty($patron_member['contact'])): ?>
-                                                        <p class="card-text main-text-color"><strong>Contact:</strong> <?= htmlspecialchars($patron_member['contact']) ?></p>
-                                                    <?php endif; ?>
-                                                    <?php if (!empty($patron_member['email'])): ?>
-                                                        <p class="card-text main-text-color"><strong>Email:</strong> <?= htmlspecialchars($patron_member['email']) ?></p>
-                                                    <?php endif; ?>
+                            <div class="tab-pane fade" id="patron-members" role="tabpanel" aria-labelledby="patron-members-tab">
+                                <div class="container my-4">
+                                    <div class="row">
+                                        <?php foreach ($patron_members as $patron_member): ?>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card">
+                                                    <div class="card-body card-member">
+                                                        <h5 class="card-title main-text-color"><?= htmlspecialchars($patron_member['pm']) ?></h5>
+                                                        <p class="card-text main-text-color"><?= htmlspecialchars($patron_member['company']) ?></p>
+                                                        <?php if (!empty($patron_member['contact'])): ?>
+                                                            <p class="card-text main-text-color"><strong>Contact:</strong> <?= htmlspecialchars($patron_member['contact']) ?></p>
+                                                        <?php endif; ?>
+                                                        <?php if (!empty($patron_member['email'])): ?>
+                                                            <p class="card-text main-text-color"><strong>Email:</strong> <?= htmlspecialchars($patron_member['email']) ?></p>
+                                                        <?php endif; ?>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    <?php endforeach; ?>
+                                        <?php endforeach; ?>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="tab-pane fade" id="life-member" role="tabpanel" aria-labelledby="life-member-tab">
-                            <div class="container my-4">
-                                <div class="row">
-                                    <?php foreach ($life_members as $life_member): ?>
-                                        <div class="col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title main-text-color"><?= htmlspecialchars($life_member['pm']) ?></h5>
-                                                    <p class="card-text main-text-color"><?= htmlspecialchars($life_member['company']) ?></p>
-                                                    <?php if (!empty($life_member['contact'])): ?>
-                                                        <p class="card-text main-text-color"><strong>Contact:</strong> <?= htmlspecialchars($life_member['contact']) ?></p>
-                                                    <?php endif; ?>
-                                                    <?php if (!empty($life_member['email'])): ?>
-                                                        <p class="card-text main-text-color"><strong>Email:</strong> <?= htmlspecialchars($life_member['email']) ?></p>
-                                                    <?php endif; ?>
+                            <div class="tab-pane fade" id="life-member" role="tabpanel" aria-labelledby="life-member-tab">
+                                <div class="container my-4">
+                                    <div class="row">
+                                        <?php foreach ($life_members as $life_member): ?>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card">
+                                                    <div class="card-body card-member">
+                                                        <h5 class="card-title main-text-color"><?= htmlspecialchars($life_member['pm']) ?></h5>
+                                                        <p class="card-text main-text-color"><?= htmlspecialchars($life_member['company']) ?></p>
+                                                        <?php if (!empty($life_member['contact'])): ?>
+                                                            <p class="card-text main-text-color"><strong>Contact:</strong> <?= htmlspecialchars($life_member['contact']) ?></p>
+                                                        <?php endif; ?>
+                                                        <?php if (!empty($life_member['email'])): ?>
+                                                            <p class="card-text main-text-color"><strong>Email:</strong> <?= htmlspecialchars($life_member['email']) ?></p>
+                                                        <?php endif; ?>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    <?php endforeach; ?>
+                                        <?php endforeach; ?>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
                 </div>
             </div>

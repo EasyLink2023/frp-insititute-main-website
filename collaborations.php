@@ -6,6 +6,22 @@
     session_start();
 } ?>
 <?php include('./include/layouts/headersecond.php'); ?>
+<style>
+    .all-sect{
+        background-color: #25276d;
+        padding: 2em 0;
+        margin: 2em 0;
+    }
+    .bg-card{
+        background-color: #25276d;
+        color: #fff;
+        border: 0px !important;
+    }
+   
+        
+    
+    
+</style>
 <!-- Main Section Start Here -->
 <div class="block-31" style="position: relative;">
     <div class="owl-carousel loop-block-31">
@@ -69,35 +85,37 @@
     </div>
 </div>
 <!-- Main Section End Here -->
-<div class="container mt-4">
-    <div class="row">
-        <div class="col-12">
-            <div class="card p-3">
-                <div class="card-body">
-                    <h2 class="section-title text-center">Collaborations</h2>
-                    <p class="main-text-color text-center">
-                        The Institute aims to promote collaboration on activities and exchange of information related to composites with other professional societies, government and non-government organizations, R&D laboratories, and educational institutions operating both in India and abroad.
-                    </p>
+ <div class="all-sect">
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="card p-3 ">
+                    <div class="card-body ">
+                        <h2 class="section-title text-center">Collaborations</h2>
+                        <p class="main-text-color text-center">
+                            The Institute aims to promote collaboration on activities and exchange of information related to composites with other professional societies, government and non-government organizations, R&D laboratories, and educational institutions operating both in India and abroad.
+                        </p>
 
-                    <p class="main-text-color">
-                        FRP Institute has signed an MOU with TIFAC (Technology Information Forecasting and Assessment Council, an autonomous body under the Dept. of Science and Technology, Govt. of India, New Delhi) for collaboration in the following areas:
-                    </p>
-                    <ul>
-                        <li class="main-text-color">Identification and development of specific composite products which can be funded by TIFAC.</li>
-                        <li class="main-text-color">Evaluation of material characteristics, processing parameters, and testing/certification standards for FRP composites.</li>
-                    </ul>
+                        <p class="main-text-color">
+                            FRP Institute has signed an MOU with TIFAC (Technology Information Forecasting and Assessment Council, an autonomous body under the Dept. of Science and Technology, Govt. of India, New Delhi) for collaboration in the following areas:
+                        </p>
+                        <ul>
+                            <li class="main-text-color">Identification and development of specific composite products which can be funded by TIFAC.</li>
+                            <li class="main-text-color">Evaluation of material characteristics, processing parameters, and testing/certification standards for FRP composites.</li>
+                        </ul>
 
-                    <p class="main-text-color">
-                        The Institute has been working with the Composites Technology Centre, IIT Madras, for jointly organizing seminars and conferences.
-                    </p>
+                        <p class="main-text-color">
+                            The Institute has been working with the Composites Technology Centre, IIT Madras, for jointly organizing seminars and conferences.
+                        </p>
 
-                    <p class="main-text-color">
-                        The Institute has a working agreement with JEC Composites, France, for jointly promoting exhibitions on composites and promoting innovations in composites carried out in India.
-                    </p>
+                        <p class="main-text-color">
+                            The Institute has a working agreement with JEC Composites, France, for jointly promoting exhibitions on composites and promoting innovations in composites carried out in India.
+                        </p>
 
-                    <p class="main-text-color text-center">
-                        FRP INSTITUTE is planning to bring together an Industry-Academia partnership with the Indian Institute of Information Technology, Design, and Manufacturing (IIITDM), Kancheepuram.
-                    </p>
+                        <p class="main-text-color text-center">
+                            FRP INSTITUTE is planning to bring together an Industry-Academia partnership with the Indian Institute of Information Technology, Design, and Manufacturing (IIITDM), Kancheepuram.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

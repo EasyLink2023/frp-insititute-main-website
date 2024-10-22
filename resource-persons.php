@@ -6,6 +6,25 @@
     session_start();
 } ?>
 <?php include('./include/layouts/headersecond.php'); ?>
+<style>
+    .all-sect{
+        background-color: #25276d;
+        padding: 2em 0;
+        margin: 2em 0;
+    }
+    .all-sect h2,p,h3{
+        color: #fff !important;
+    }
+    .card.card-resouce p, .card-body p.card-text{
+        color: #000 !important;
+    }
+    
+    @media (min-width: 1200px) {
+        .card-resouce{
+        height: 165px;
+    }
+}
+</style>
 <!-- Main Section Start Here -->
 <div class="block-31" style="position: relative;">
     <div class="owl-carousel loop-block-31">
@@ -69,14 +88,15 @@
     </div>
 </div>
 <!-- Main Section End Here -->
-<div class="container mt-4">
+ <div class="all-sect">
+ <div class="container my-4">
     <h2>Resource Persons</h2>
     <p>The institute draws technical help from a number of experts both from India and abroad. There is an International Advisory Board and a panel of Indian experts providing guidance and advice on various aspects of Composites Technology.</p>
 
     <h3>International Advisory Board</h3>
     <div class="row">
         <div class="col-md-4 mb-4">
-            <div class="card border-primary">
+            <div class="card card-resouce">
                 <div class="card-body">
                     <h5 class="card-title">Dr. Srinivasa L. Iyer, Chairman</h5>
                     <p class="card-text">California, USA</p>
@@ -84,7 +104,7 @@
             </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="card border-primary">
+            <div class="card card-resouce">
                 <div class="card-body">
                     <h5 class="card-title">Dr. Hota Ganga Rao</h5>
                     <p class="card-text">Professor, West Virginia University</p>
@@ -92,7 +112,7 @@
             </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="card border-primary">
+            <div class="card card-resouce">
                 <div class="card-body">
                     <h5 class="card-title">Prof. Rajan Sen, Ph.D, P.E., F.ACI, F.ASCE</h5>
                     <p class="card-text">University of South Florida<br>Email: <a href="mailto:sen@usf.edu">sen@usf.edu</a></p>
@@ -101,12 +121,12 @@
         </div>
     </div>
 
-    <h3>Resource People in India</h3>
+    <h3 class="mb-3">Resource People in India</h3>
 
     <h4>Bangalore</h4>
     <div class="row">
         <div class="col-md-6 mb-4">
-            <div class="card border-primary">
+            <div class="card ">
                 <div class="card-body">
                     <h5 class="card-title">Dr. Krishnadas Nair</h5>
                     <p class="card-text">Former Chairman, HAL Ltd.</p>
@@ -114,7 +134,7 @@
             </div>
         </div>
         <div class="col-md-6 mb-4">
-            <div class="card border-primary">
+            <div class="card ">
                 <div class="card-body">
                     <h5 class="card-title">Prof. Dwarakadasa</h5>
                     <p class="card-text">Bangalore</p>
@@ -126,7 +146,7 @@
     <h4>Chennai</h4>
     <div class="row">
         <div class="col-md-6 mb-4">
-            <div class="card border-primary">
+            <div class="card ">
                 <div class="card-body">
                     <h5 class="card-title">Dr. R. Velmurugan</h5>
                     <p class="card-text">Head, Composite Technology Centre, IIT Madras.</p>
@@ -134,7 +154,7 @@
             </div>
         </div>
         <div class="col-md-6 mb-4">
-            <div class="card border-primary">
+            <div class="card ">
                 <div class="card-body">
                     <h5 class="card-title">Dr. V. Velpari</h5>
                     <p class="card-text">Executive Director, Harsha Fibres & Composites</p>
@@ -146,7 +166,7 @@
     <h4>New Delhi</h4>
     <div class="row">
         <div class="col-md-6 mb-4">
-            <div class="card border-primary">
+            <div class="card ">
                 <div class="card-body">
                     <h5 class="card-title">Mr. N. N. Goyal</h5>
                     <p class="card-text">Director, U. P. Twiga Fiberglass Ltd.</p>
@@ -154,7 +174,7 @@
             </div>
         </div>
         <div class="col-md-6 mb-4">
-            <div class="card border-primary">
+            <div class="card ">
                 <div class="card-body">
                     <h5 class="card-title">Mr. R. N. Gupta</h5>
                     <p class="card-text">Director, Revex Plasticizers Ltd.</p>
@@ -166,7 +186,7 @@
     <h4>Mumbai</h4>
     <div class="row">
         <div class="col-md-6 mb-4">
-            <div class="card border-primary">
+            <div class="card ">
                 <div class="card-body">
                     <h5 class="card-title">Prof. S. C. Lakkad</h5>
                     <p class="card-text">Former Deputy Director, IIT, Bombay</p>
@@ -174,7 +194,7 @@
             </div>
         </div>
         <div class="col-md-6 mb-4">
-            <div class="card border-primary">
+            <div class="card ">
                 <div class="card-body">
                     <h5 class="card-title">Mr. S. Ramachandran</h5>
                     <p class="card-text">Mumbai</p>
@@ -183,6 +203,9 @@
         </div>
     </div>
 </div>
+
+ </div>
+
 
 
 

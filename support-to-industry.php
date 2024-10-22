@@ -6,6 +6,14 @@
     session_start();
 } ?>
 <?php include('./include/layouts/headersecond.php'); ?>
+<style>
+    .all-sect{
+        background-color: #25276d;
+        padding: 2em 0;
+        margin: 2em 0;
+    }
+
+</style>
 <!-- Main Section Start Here -->
 <div class="block-31" style="position: relative;">
     <div class="owl-carousel loop-block-31">
@@ -69,7 +77,8 @@
     </div>
 </div>
 <!-- Main Section End Here -->
-<div class="container mt-4">
+ <div class="all-sect">
+ <div class="container my-4">
     <div class="row">
         <div class="col-12">
             <div class="sticky-section card p-3">
@@ -154,5 +163,8 @@
         </div>
     </div>
 </div>
+
+ </div>
+
 
 <?php include('./include/layouts/footer.php'); ?>

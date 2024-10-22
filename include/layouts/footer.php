@@ -79,7 +79,7 @@
                 <p>
                     Copyright &copy;<script>
                         document.write(new Date().getFullYear());
-                    </script> Powered by <a href="https://easylinkindia.com" target="_blank" style="color: #f7ca44 !important">Easy Link</a>
+                    </script> Powered by <a href="https://easylinkindia.com" target="_blank" style="color: #ee1c23 !important">Easy Link</a>
                 </p>
             </div>
         </div>

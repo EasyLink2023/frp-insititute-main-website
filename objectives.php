@@ -6,6 +6,13 @@
     session_start();
 } ?>
 <?php include('./include/layouts/headersecond.php'); ?>
+<style>
+    .all-sect{
+        background-color: #25276d;
+        padding: 2em 0;
+        margin: 2em 0;
+    }
+</style>
 <!-- Main Section Start Here -->
 <div class="block-31" style="position: relative;">
     <div class="owl-carousel loop-block-31">
@@ -69,27 +76,31 @@
     </div>
 </div>
 <!-- Main Section End Here -->
-<div class="container mt-4">
-    <div class="row">
-        <div class="col-12">
-            <div class="card p-3">
-                <div class="card-body">
-                    <h2 class="section-title text-center">Objectives</h2>
-                    <p class="main-text-color">
-                        OBJECTIVES OF THE INSTITUTE
-                    </p>
-                    <ul>
-                        <li class="main-text-color">Advancement of Composites Technology by promoting/propagating the use of composites and their products.</li>
-                        <li class="main-text-color">Human skill development by imparting knowledge and skills to the engineers, fabricators, supervisors, and workers engaged in the composites industry/organizations.</li>
-                    </ul>
-                    <p class="main-text-color">
-                        FRP INSTITUTE started functioning in 1999 as a professional society for bringing together all those who are connected with FRP Composites. The member list includes raw materials manufacturers, product manufacturers, machinery manufacturers, specialty chemicals and additives suppliers, traders, academic institutions, government organizations, designers, consultants, end users, etc. The aim is to create a network of the entire composites value chain in order to promote the growth and development of FRP Composites and its industrial & technological base.
-                    </p>
+ <div class="all-sect">
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="card p-3">
+                    <div class="card-body">
+                        <h2 class="section-title text-center">Objectives</h2>
+                        <p class="main-text-color">
+                            OBJECTIVES OF THE INSTITUTE
+                        </p>
+                        <ul>
+                            <li class="main-text-color">Advancement of Composites Technology by promoting/propagating the use of composites and their products.</li>
+                            <li class="main-text-color">Human skill development by imparting knowledge and skills to the engineers, fabricators, supervisors, and workers engaged in the composites industry/organizations.</li>
+                        </ul>
+                        <p class="main-text-color">
+                            FRP INSTITUTE started functioning in 1999 as a professional society for bringing together all those who are connected with FRP Composites. The member list includes raw materials manufacturers, product manufacturers, machinery manufacturers, specialty chemicals and additives suppliers, traders, academic institutions, government organizations, designers, consultants, end users, etc. The aim is to create a network of the entire composites value chain in order to promote the growth and development of FRP Composites and its industrial & technological base.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+
+ </div>
+
 
 
 <?php include('./include/layouts/footer.php'); ?>

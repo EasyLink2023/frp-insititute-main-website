@@ -1,4 +1,5 @@
 
+    
     body {
   font-family: "Overpass", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
@@ -14,11 +15,11 @@ a {
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
-  color: #f7ca44;
+  color: #ee1c23;
 }
 a:hover {
   text-decoration: none;
-  color: #f7ca44;
+  color: #ee1c23;
 }
 a.link-underline {
   text-decoration: underline;
@@ -158,7 +159,7 @@ h5,
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 .ftco-navbar-light.scrolled .nav-item.active > a {
-  color: #f7ca44 !important;
+  color: #ee2026 !important;
 }
 .ftco-navbar-light.scrolled .nav-item.active > a:before {
   display: none;
@@ -835,7 +836,7 @@ textarea.form-control {
     text-transform: uppercase;
     margin-bottom: 27px;
   letter-spacing: 0.1em;
-  color: #f7ca44 !important;
+  color: #ee1c23 !important;
   font-family: "Overpass", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
@@ -856,7 +857,7 @@ textarea.form-control {
   color: #fff !important;
 }
 .footer a:hover {
-  color: #f7ca44 !important;
+  color: #ee1c23 !important;
 }
 
 .ftco-footer-social li {
@@ -1442,7 +1443,7 @@ textarea.form-control {
 
 .block-6 .icon {
   margin-right: 30px;
-  color: #f7ca44;
+  color: #ee1c23 ;
 }
 .block-6 .icon span:before {
   font-size: 50px;
@@ -2146,7 +2147,7 @@ textarea.form-control {
   width: 28px;
   font-size: 18px;
   padding-top: 2px;
-  color: #f7ca44;
+  color: #ee1c23;
 }
 
 .img-hover {
@@ -2690,6 +2691,11 @@ textarea.form-control {
 
 .custom-card:hover {
   box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+  background-color: #25276d !important;
+  color: #fff !important;
+}
+.custom-card:hover .card-icon , .custom-card:hover .card-body h3 , .custom-card:hover .card-body p{
+    color: #fff !important;
 }
 
 .card-link {
