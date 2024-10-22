@@ -8,16 +8,29 @@
 <?php include('./include/layouts/headersecond.php'); ?>
 <style>
     .all-sect{
-        background-color: #25276d;
+        background-color: #eeeeee;
         padding: 2em 0;
         margin: 2em 0;
     }
     .bg-card{
-        background-color: #25276d;
+        background-color: #eeeeee;
         color: #fff;
         border: 0px !important;
     }
-   
+    .cards-hov:hover{
+        background-color: #25276d !important;
+        color: #fff !important;
+    }
+    .cards-hov:hover p ,.cards-hov:hover h5  ,.cards-hov:hover .section-title ,.cards-hov:hover li{
+        color: #fff !important;
+     }
+    @media (min-width: 1200px) {
+        .cards-hov{
+        border: 0px !important;
+    }
+    
+    
+}
         
     
     
@@ -86,13 +99,13 @@
 </div>
 <!-- Main Section End Here -->
  <div class="all-sect">
-    <div class="container mt-4">
+    <div class="container my-4">
         <div class="row">
             <div class="col-12">
-                <div class="card p-3 ">
+                <div class="card p-3 cards-hov">
                     <div class="card-body ">
                         <h2 class="section-title text-center">Collaborations</h2>
-                        <p class="main-text-color text-center">
+                        <p class="main-text-color ">
                             The Institute aims to promote collaboration on activities and exchange of information related to composites with other professional societies, government and non-government organizations, R&D laboratories, and educational institutions operating both in India and abroad.
                         </p>
 
@@ -112,7 +125,7 @@
                             The Institute has a working agreement with JEC Composites, France, for jointly promoting exhibitions on composites and promoting innovations in composites carried out in India.
                         </p>
 
-                        <p class="main-text-color text-center">
+                        <p class="main-text-color ">
                             FRP INSTITUTE is planning to bring together an Industry-Academia partnership with the Indian Institute of Information Technology, Design, and Manufacturing (IIITDM), Kancheepuram.
                         </p>
                     </div>

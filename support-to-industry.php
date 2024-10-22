@@ -8,10 +8,22 @@
 <?php include('./include/layouts/headersecond.php'); ?>
 <style>
     .all-sect{
-        background-color: #25276d;
+        background-color: #eeeeee;
         padding: 2em 0;
         margin: 2em 0;
     }
+        .cards-hov{
+        border: 0px !important;
+    }
+    .cards-hov:hover{
+        background-color: #25276d !important;
+        color: #fff !important;
+    }
+    .cards-hov:hover p ,.cards-hov:hover h5  ,.cards-hov:hover .section-title ,.cards-hov:hover li{
+        color: #fff !important;
+     }
+    
+
 
 </style>
 <!-- Main Section Start Here -->
@@ -81,10 +93,10 @@
  <div class="container my-4">
     <div class="row">
         <div class="col-12">
-            <div class="sticky-section card p-3">
+            <div class="sticky-section card p-3 cards-hov">
                 <div class="card-body">
                     <h2 class="section-title text-center">International Conferences and Exhibitions</h2>
-                    <p class="main-text-color text-center">
+                    <p class="main-text-color ">
                         The institute organizes International Conferences and Exhibition on Reinforced Plastics (ICERP) series event once every two years. The institute has successfully organized nine ICERP events since 2002.
                     </p>
                     <ul>
@@ -96,13 +108,13 @@
                         <li class="main-text-color">ICERP has become an ideal platform for foreign companies to collaborate with Indian companies and for Indian composites companies to showcase their capabilities globally.</li>
                         <li class="main-text-color">ICERP is the second biggest composites event in Asia, well recognized by the global composites fraternity.</li>
                     </ul>
-                    <p class="main-text-color text-center">
+                    <p class="main-text-color ">
                         For more information on ICERP events, visit our website: 
                         <a href="http://www.icerpshow.com" target="_blank">www.icerpshow.com</a>
                     </p>
 
                     <h3 class="section-title text-center">India Pavilion in Leading Composites Exhibitions</h3>
-                    <p class="main-text-color text-center">
+                    <p class="main-text-color ">
                         The Institute organizes India pavilion and participates in leading composites exhibitions such as JEC World, China Composites Expo, JEC Asia, etc., with the aim to promote Indian companies and explore export opportunities.
                     </p>
 
@@ -129,7 +141,7 @@
                     </ul>
 
                     <h3 class="section-title text-center">Voluntary Codes of Practice</h3>
-                    <p class="main-text-color text-center">
+                    <p class="main-text-color ">
                         This service of the Institute is intended to prepare standard codes of practices on materials, processes, and products that can be voluntarily adopted by the industry for making and supplying products of consistent quality.
                     </p>
                     <ul>
@@ -139,7 +151,7 @@
                     </ul>
 
                     <h3 class="section-title text-center">Information Services / Technical Queries</h3>
-                    <p class="main-text-color text-center">
+                    <p class="main-text-color ">
                         Industries can send their queries regarding sourcing of materials, machinery, and composites products to the contact details provided below:
                     </p>
                     <ul>
@@ -154,7 +166,7 @@
                     </ul>
 
                     <h3 class="section-title text-center">Information & Technical Services</h3>
-                    <p class="main-text-color text-center">
+                    <p class="main-text-color ">
                         Industries can approach the Composites Technology Centre at IIT Madras for carrying out tests on composite materials. 
                         <a href="javascript:void(0)">Click here</a> for the available test facilities and corresponding charges.
                     </p>

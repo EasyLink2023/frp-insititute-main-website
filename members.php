@@ -187,18 +187,29 @@ $patron_members = [
 <?php include('./include/layouts/headersecond.php'); ?>
 <style>
     .all-sect{
-        background-color: #25276d;
+        background-color: #eeeeee;
         padding: 2em 0;
         margin: 2em 0;
     }
     .bg-card{
-        background-color: #25276d;
+        background-color: #eeeeee !important;
         color: #fff;
         border: 0px !important;
     }
-   @media (min-width:1200px) {
-     .card-member{
-        height: 240px;
+    .nav-tabs .nav-link{
+    border: 1px solid transparent;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    background: #25276d;
+    color: #fff;
+   }
+   .card-member:hover{
+        background-color: #25276d !important;
+        color: #fff !important;
+
+     }
+     .card-member:hover h5, .card-member:hover p{
+        color: #fff !important;
      }
     .card-member .card-title{
         margin-bottom: 0px !important;
@@ -207,7 +218,32 @@ $patron_members = [
         margin-bottom: 10px !important;
         line-height: 26px;
     }
+   @media (min-width:1200.5px) {
+     .card-member{
+        height: 240px;
+        border: 0px !important;
+     }
+     
    }
+   @media (min-width:991.5px) and (max-width:1200px) {
+     .card-member{
+        height: 270px;
+        border: 0px !important;
+     }
+   }
+   @media (min-width:768px) and (max-width:991px) {
+     .card-member{
+        height: 421px;
+        border: 0px !important;
+     }
+   }
+   @media (max-width:768.5px) {
+     .card-member{
+        height: 270px;
+        border: 0px !important;
+     }
+   }
+   
         
     
     
@@ -259,12 +295,12 @@ $patron_members = [
                                     <div class="row">
                                         <?php foreach ($corporate_members as $corporate_member): ?>
                                             <div class="col-md-4 mb-3">
-                                                <div class="card">
-                                                    <div class="card-body card-member">
-                                                        <h5 class="card-title main-text-color"><?= htmlspecialchars($corporate_member['cm']) ?></h5>
-                                                        <p class="card-text main-text-color"><?= htmlspecialchars($corporate_member['company']) ?></p>
+                                                <div class="card card-member">
+                                                    <div class="card-body ">
+                                                        <h5 class="card-title"><?= htmlspecialchars($corporate_member['cm']) ?></h5>
+                                                        <p class="card-text text-dark"><?= htmlspecialchars($corporate_member['company']) ?></p>
                                                         <?php if (!empty($corporate_member['contact'])): ?>
-                                                            <p class="card-text main-text-color"><strong>Contact:</strong> <?= htmlspecialchars($corporate_member['contact']) ?></p>
+                                                            <p class="card-text text-dark"><strong>Contact:</strong> <?= htmlspecialchars($corporate_member['contact']) ?></p>
                                                         <?php endif; ?>
                                                     </div>
                                                 </div>
@@ -280,16 +316,16 @@ $patron_members = [
                                     <div class="row">
                                         <?php foreach ($donor_members as $donor_member): ?>
                                             <div class="col-md-4 mb-3">
-                                                <div class="card">
-                                                    <div class="card-body card-member">
-                                                        <h5 class="card-title main-text-color"><?= htmlspecialchars($donor_member['dm']) ?></h5>
-                                                        <p class="card-text main-text-color"><?= htmlspecialchars($donor_member['company']) ?></p>
-                                                        <p class="card-text main-text-color"><strong>Contact:</strong> <?= htmlspecialchars($donor_member['contact']) ?></p>
+                                                <div class="card card-member">
+                                                    <div class="card-body ">
+                                                        <h5 class="card-title"><?= htmlspecialchars($donor_member['dm']) ?></h5>
+                                                        <p class="card-text text-dark"><?= htmlspecialchars($donor_member['company']) ?></p>
+                                                        <p class="card-text text-dark"><strong>Contact:</strong> <?= htmlspecialchars($donor_member['contact']) ?></p>
                                                         <?php if (!empty($donor_member['email'])): ?>
-                                                            <p class="card-text main-text-color"><strong>Email:</strong> <?= htmlspecialchars($donor_member['email']) ?></p>
+                                                            <p class="card-text text-dark"><strong>Email:</strong> <?= htmlspecialchars($donor_member['email']) ?></p>
                                                         <?php endif; ?>
                                                         <?php if (!empty($donor_member['website'])): ?>
-                                                            <p class="card-text main-text-color"><strong>Website:</strong> <a href="http://<?= htmlspecialchars($donor_member['website']) ?>" target="_blank"><?= htmlspecialchars($donor_member['website']) ?></a></p>
+                                                            <p class="card-text text-dark"><strong>Website:</strong> <a href="http://<?= htmlspecialchars($donor_member['website']) ?>" target="_blank"><?= htmlspecialchars($donor_member['website']) ?></a></p>
                                                         <?php endif; ?>
                                                     </div>
                                                 </div>
@@ -304,15 +340,15 @@ $patron_members = [
                                     <div class="row">
                                         <?php foreach ($patron_members as $patron_member): ?>
                                             <div class="col-md-4 mb-3">
-                                                <div class="card">
-                                                    <div class="card-body card-member">
-                                                        <h5 class="card-title main-text-color"><?= htmlspecialchars($patron_member['pm']) ?></h5>
-                                                        <p class="card-text main-text-color"><?= htmlspecialchars($patron_member['company']) ?></p>
+                                                <div class="card card-member">
+                                                    <div class="card-body ">
+                                                        <h5 class="card-title"><?= htmlspecialchars($patron_member['pm']) ?></h5>
+                                                        <p class="card-text text-dark"><?= htmlspecialchars($patron_member['company']) ?></p>
                                                         <?php if (!empty($patron_member['contact'])): ?>
-                                                            <p class="card-text main-text-color"><strong>Contact:</strong> <?= htmlspecialchars($patron_member['contact']) ?></p>
+                                                            <p class="card-text text-dark"><strong>Contact:</strong> <?= htmlspecialchars($patron_member['contact']) ?></p>
                                                         <?php endif; ?>
                                                         <?php if (!empty($patron_member['email'])): ?>
-                                                            <p class="card-text main-text-color"><strong>Email:</strong> <?= htmlspecialchars($patron_member['email']) ?></p>
+                                                            <p class="card-text text-dark"><strong>Email:</strong> <?= htmlspecialchars($patron_member['email']) ?></p>
                                                         <?php endif; ?>
                                                     </div>
                                                 </div>
@@ -327,15 +363,15 @@ $patron_members = [
                                     <div class="row">
                                         <?php foreach ($life_members as $life_member): ?>
                                             <div class="col-md-4 mb-3">
-                                                <div class="card">
-                                                    <div class="card-body card-member">
-                                                        <h5 class="card-title main-text-color"><?= htmlspecialchars($life_member['pm']) ?></h5>
-                                                        <p class="card-text main-text-color"><?= htmlspecialchars($life_member['company']) ?></p>
+                                                <div class="card card-member">
+                                                    <div class="card-body ">
+                                                        <h5 class="card-title"><?= htmlspecialchars($life_member['pm']) ?></h5>
+                                                        <p class="card-text text-dark"><?= htmlspecialchars($life_member['company']) ?></p>
                                                         <?php if (!empty($life_member['contact'])): ?>
-                                                            <p class="card-text main-text-color"><strong>Contact:</strong> <?= htmlspecialchars($life_member['contact']) ?></p>
+                                                            <p class="card-text text-dark"><strong>Contact:</strong> <?= htmlspecialchars($life_member['contact']) ?></p>
                                                         <?php endif; ?>
                                                         <?php if (!empty($life_member['email'])): ?>
-                                                            <p class="card-text main-text-color"><strong>Email:</strong> <?= htmlspecialchars($life_member['email']) ?></p>
+                                                            <p class="card-text text-dark"><strong>Email:</strong> <?= htmlspecialchars($life_member['email']) ?></p>
                                                         <?php endif; ?>
                                                     </div>
                                                 </div>

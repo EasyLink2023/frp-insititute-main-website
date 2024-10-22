@@ -39,10 +39,29 @@ $courses = [
 <?php include('./include/layouts/headersecond.php'); ?>
 <style>
     .all-sect{
-        background-color: #25276d;
+        background-color: #eeeeee;
         padding: 2em 0;
         margin: 2em 0;
     }
+        .cards-hov{
+        border: 0px !important;
+    }
+    .cards-hov:hover{
+        background-color: #25276d !important;
+        color: #fff !important;
+    }
+    .cards-hov:hover p ,.cards-hov:hover h5  ,.cards-hov:hover .section-title ,.cards-hov:hover li ,.cards-hov:hover a{
+        color: #fff !important;
+     }
+     .cards-select{
+        background-color: #25276d !important;
+        color: #fff !important;
+    }
+    .cards-select p ,.cards-select h5  ,.cards-select .section-title ,.cards-select li ,.cards-select a{
+        color: #fff !important;
+     }
+    
+
 
 </style>
 <!-- Main Section Start Here -->
@@ -112,7 +131,7 @@ $courses = [
  <div class="container mt-4">
     <div class="row">
         <div class="col-8">
-            <div class="sticky-section card p-3">
+            <div class="sticky-section card p-3 cards-hov">
                 <div class="card-body">
                     <h2 class="section-title text-center">Skill Development</h2>
                     <p class="lead main-text-color text-center">A well trained work force is an asset to any sector in the composites Industry</p>
@@ -131,7 +150,7 @@ $courses = [
             </div>
         </div>
         <div class="col-4">
-            <div class="card p-3">
+            <div class="card p-3 cards-select" >
                 <div class="card-body">
                     <h3 class="section-title text-center">
                         List of study materials (Only Hard copy Available)
