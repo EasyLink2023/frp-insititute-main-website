@@ -43,10 +43,10 @@
                 <div class="block-23">
                     <h3 class="heading-section">Services</h3>
                     <ul>
-                        <li><a href="#"><span class="icon icon-chevron-right"></span> Skill Development</a></li>
-                        <li><a href="#"><span class="icon icon-chevron-right"></span> Support to Industry</a></li>
-                        <li><a href="#"><span class="icon icon-chevron-right"></span> Collaborations</a></li>
-                        <li><a href="#"><span class="icon icon-chevron-right"></span> Members</a></li>
+                        <li><a href="skill-development.php"><span class="icon icon-chevron-right"></span> Skill Development</a></li>
+                        <li><a href="support-to-industry.php"><span class="icon icon-chevron-right"></span> Support to Industry</a></li>
+                        <li><a href="support-to-industry.php"><span class="icon icon-chevron-right"></span> Collaborations</a></li>
+                        <li><a href="members.php"><span class="icon icon-chevron-right"></span> Members</a></li>
                     </ul>
                 </div>
             </div>
@@ -55,10 +55,9 @@
                 <div class="block-23">
                     <h3 class="heading-section">About Us</h3>
                     <ul>
-                        <li><a href="#"><span class="icon icon-chevron-right"></span> About FRP Institute</a></li>
-                        <li><a href="#"><span class="icon icon-chevron-right"></span> Objectives</a></li>
-                        <li><a href="#"><span class="icon icon-chevron-right"></span> Administration</a></li>
-                        <li><a href="#"><span class="icon icon-chevron-right"></span> Resource Persons</a></li>
+                        <li><a href="objectives.php"><span class="icon icon-chevron-right"></span> Objectives</a></li>
+                        <li><a href="administration.php"><span class="icon icon-chevron-right"></span> Administration</a></li>
+                        <li><a href="resource-persons.php"><span class="icon icon-chevron-right"></span> Resource Persons</a></li>
                     </ul>
                 </div>
             </div>
@@ -66,10 +65,10 @@
                 <div class="block-23">
                     <h3 class="heading-section">Quick Links</h3>
                     <ul>
-                        <li><a href="#" class="active"><span class="icon icon-chevron-right"></span> Home</a></li>
-                        <li><a href="#"><span class="icon icon-chevron-right"></span>Events</a></li>
-                        <li><a href="#"><span class="icon icon-chevron-right"></span> Download</a></li>
-                        <li><a href="#"><span class="icon icon-chevron-right"></span> Conatct Us</a></li>
+                        <li><a href="index.php" class="active"><span class="icon icon-chevron-right"></span> Home</a></li>
+                        <li><a href="upcoming-events.php"><span class="icon icon-chevron-right"></span>Events</a></li>
+                        <li><a href="download.php"><span class="icon icon-chevron-right"></span> Download</a></li>
+                        <li><a href="contact-us.php"><span class="icon icon-chevron-right"></span> Conatct Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -107,9 +106,7 @@
 <script src="<?php BASE_URL; ?>assets/js/jquery.fancybox.min.js"></script>
 <script src="<?php BASE_URL; ?>assets/js/aos.js"></script>
 <script src="<?php BASE_URL; ?>assets/js/jquery.animateNumber.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-
-<script src="<?php BASE_URL; ?>assets/js/google-map.js"></script>
+<script src="<?php BASE_URL; ?>assets/js/toastr.min.js"></script>
 <script src="<?php BASE_URL; ?>assets/js/main.js"></script>
 <script>
     $(document).ready(function() {

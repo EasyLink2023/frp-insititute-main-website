@@ -317,3 +317,41 @@ $(document).ready(function ($) {
     autoclose: true,
   });
 });
+
+$(document).ready(function () {
+  $('#contactForm').on('submit', function (e) {
+      e.preventDefault(); // Prevent the default form submission
+      $('#loader').show(); // Show the loader
+
+      // Get form data
+      var formData = {
+          name: $('#name').val(),
+          email: $('#email').val(),
+          phone: $('#phone').val(),
+          address: $('#address').val(),
+          company: $('#company').val(),
+          message: $('#message').val()
+      };
+
+      // AJAX request
+      $.ajax({
+          type: 'POST',
+          url: './api/api-contact-us.php', // Replace with your server endpoint URL
+          data: formData,
+          success: function (response) {
+              // Hide the loader
+              $('#loader').hide();
+              // Show success message
+              toastr.success('Your enquiry has been sent successfully!');
+              // Clear form fields
+              $('#contactForm')[0].reset();
+          },
+          error: function () {
+              // Hide the loader
+              $('#loader').hide();
+              // Show error message
+              toastr.error('There was an error sending your enquiry. Please try again.');
+          }
+      });
+  });
+});

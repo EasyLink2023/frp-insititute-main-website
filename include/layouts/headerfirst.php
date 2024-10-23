@@ -23,3 +23,4 @@ require('./include/config.php');
     <link rel="stylesheet" href="<?php BASE_URL; ?>assets/css/fancybox.min.css">
     <link rel="stylesheet" href="<?php BASE_URL; ?>assets/css/bootstrap.css">
     <link rel="stylesheet" href="<?php BASE_URL; ?>assets/css/style.css">
+    <link rel="stylesheet" href="<?php BASE_URL; ?>assets/css/toastr.min.css">
