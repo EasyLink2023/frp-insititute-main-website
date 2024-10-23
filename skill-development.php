@@ -134,18 +134,18 @@ $courses = [
             <div class="sticky-section card p-3 cards-hov">
                 <div class="card-body">
                     <h2 class="section-title text-center">Skill Development</h2>
-                    <p class="lead main-text-color text-center">A well trained work force is an asset to any sector in the composites Industry</p>
-                    <p class="lead main-text-color text-center"><strong>FRP INSTITUTE conducts “Three Days Training program on composites Technology.” Click Here for Earlier Training Program Brochure.</strong></p>
+                    <p class="main-text-color text-center">A well trained work force is an asset to any sector in the composites Industry</p>
+                    <p class=" main-text-color text-center"><strong>FRP INSTITUTE conducts “Three Days Training program on composites Technology.” Click Here for Earlier Training Program Brochure.</strong></p>
 
                     <h3 class="section-title text-center">Courses / Workshops / In-house Training</h3>
                     <ul>
-                        <li class="lead main-text-color">FRP INSTITUTE in association with Institute of Chemical Technology (ICT) Mumbai offered a certificate course on composites.</li>
-                        <li class="lead main-text-color">The Institute organizes workshops on basic composites technology for the Indian Composites Industry.</li>
-                        <li class="lead main-text-color">In-house training can be organized on specific request.</li>
+                        <li class=" main-text-color">FRP INSTITUTE in association with Institute of Chemical Technology (ICT) Mumbai offered a certificate course on composites.</li>
+                        <li class=" main-text-color">The Institute organizes workshops on basic composites technology for the Indian Composites Industry.</li>
+                        <li class=" main-text-color">In-house training can be organized on specific request.</li>
                     </ul>
 
                     <h3 class="section-title text-center">Composites lab in Engineering Colleges</h3>
-                    <p class="lead main-text-color text-center">The Institute will provide guidance in setting up composites laboratory in engineering colleges in terms of sourcing Machinery, Equipment and Materials.</p>
+                    <p class=" main-text-color text-center">The Institute will provide guidance in setting up composites laboratory in engineering colleges in terms of sourcing Machinery, Equipment and Materials.</p>
                 </div>
             </div>
         </div>

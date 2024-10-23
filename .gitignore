@@ -1,1 +1,3 @@
 include/config.php
+assets/download/info/*
+assets/ppt/*
