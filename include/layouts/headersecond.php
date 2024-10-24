@@ -40,7 +40,7 @@
                     </li>
 
                     <li class="nav-item <?= (strpos($currentUrl, 'contact-us') !== false) ? 'active' : ''; ?>">
-                        <a href="<?= BASE_URL; ?>contact-us.php" class="nav-link">Contact Us</a>
+                        <a href="<?= BASE_URL; ?>contact.php" class="nav-link">Contact Us</a>
                     </li>
                 </ul>
             </div>

@@ -68,7 +68,7 @@
                         <li><a href="index.php" class="active"><span class="icon icon-chevron-right"></span> Home</a></li>
                         <li><a href="upcoming-events.php"><span class="icon icon-chevron-right"></span>Events</a></li>
                         <li><a href="download.php"><span class="icon icon-chevron-right"></span> Download</a></li>
-                        <li><a href="contact-us.php"><span class="icon icon-chevron-right"></span> Conatct Us</a></li>
+                        <li><a href="contact.php"><span class="icon icon-chevron-right"></span> Conatct Us</a></li>
                     </ul>
                 </div>
             </div>

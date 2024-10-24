@@ -40,7 +40,7 @@
     <div class="owl-carousel loop-block-31">
 
         <!-- Slide 1 -->
-        <div class="block-30 block-30-sm item" style="background-image: url('<?php BASE_URL; ?>assets/images/frp-images/background/bg1.png');" data-stellar-background-ratio="0.5">
+        <div class="block-30 block-30-sm item" style="background-image: url('./assets/images/frp-images/background/bg1.png');" data-stellar-background-ratio="0.5">
             <div class="container">
                 <div class="row align-items-center justify-content-center text-center">
                     <div class="col-md-7">
@@ -54,7 +54,7 @@
         </div>
 
         <!-- Slide 2 -->
-        <div class="block-30 block-30-sm item" style="background-image: url('<?php BASE_URL; ?>assets/images/frp-images/background/bg2.jpg');" data-stellar-background-ratio="0.5">
+        <div class="block-30 block-30-sm item" style="background-image: url('./assets/images/frp-images/background/bg2.jpg');" data-stellar-background-ratio="0.5">
             <div class="container">
                 <div class="row align-items-center justify-content-center text-center">
                     <div class="col-md-7">
@@ -68,7 +68,7 @@
         </div>
 
         <!-- Slide 3 -->
-        <div class="block-30 block-30-sm item" style="background-image: url('<?php BASE_URL; ?>assets/images/frp-images/background/bg3.jpg');" data-stellar-background-ratio="0.5">
+        <div class="block-30 block-30-sm item" style="background-image: url('./assets/images/frp-images/background/bg3.jpg');" data-stellar-background-ratio="0.5">
             <div class="container">
                 <div class="row align-items-center justify-content-center text-center">
                     <div class="col-md-7">
@@ -82,7 +82,7 @@
         </div>
 
         <!-- Slide 4 -->
-        <div class="block-30 block-30-sm item" style="background-image: url('<?php BASE_URL; ?>assets/images/frp-images/background/bg4.jpg');" data-stellar-background-ratio="0.5">
+        <div class="block-30 block-30-sm item" style="background-image: url('./assets/images/frp-images/background/bg4.jpg');" data-stellar-background-ratio="0.5">
             <div class="container">
                 <div class="row align-items-center justify-content-center text-center">
                     <div class="col-md-7">
