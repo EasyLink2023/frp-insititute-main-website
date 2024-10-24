@@ -6,32 +6,14 @@
     session_start();
 } ?>
 <?php include('./include/layouts/headersecond.php'); ?>
-<style>
-    .all-sect{
-        background-color: #eeeeee;
-        padding: 2em 0;
-        margin: 2em 0;
-    }
-        .cards-hov{
-        border: 0px !important;
-    }
-    .cards-hov:hover{
-        background-color: #25276d !important;
-        color: #fff !important;
-    }
-    .cards-hov:hover p ,.cards-hov:hover h5  ,.cards-hov:hover .section-title ,.cards-hov:hover li{
-        color: #fff !important;
-     }
-    
+<link rel="stylesheet" href="<?php BASE_URL; ?>assets/css/innerpage-nohover.css">
 
-
-</style>
 <!-- Main Section Start Here -->
 <div class="block-31" style="position: relative;">
     <div class="owl-carousel loop-block-31">
 
         <!-- Slide 1 -->
-        <div class="block-30 block-30-sm item" style="background-image: url('./assets/images/frp-images/background/bg1.png');" data-stellar-background-ratio="0.5">
+        <div class="block-30 block-30-sm item" style="background-image: url('<?php BASE_URL; ?>assets/images/frp-images/background/bg1.png');" data-stellar-background-ratio="0.5">
             <div class="container">
                 <div class="row align-items-center justify-content-center text-center">
                     <div class="col-md-7">
@@ -45,7 +27,7 @@
         </div>
 
         <!-- Slide 2 -->
-        <div class="block-30 block-30-sm item" style="background-image: url('./assets/images/frp-images/background/bg2.jpg');" data-stellar-background-ratio="0.5">
+        <div class="block-30 block-30-sm item" style="background-image: url('<?php BASE_URL; ?>assets/images/frp-images/background/bg2.jpg');" data-stellar-background-ratio="0.5">
             <div class="container">
                 <div class="row align-items-center justify-content-center text-center">
                     <div class="col-md-7">
@@ -59,7 +41,7 @@
         </div>
 
         <!-- Slide 3 -->
-        <div class="block-30 block-30-sm item" style="background-image: url('./assets/images/frp-images/background/bg3.jpg');" data-stellar-background-ratio="0.5">
+        <div class="block-30 block-30-sm item" style="background-image: url('<?php BASE_URL; ?>assets/images/frp-images/background/bg3.jpg');" data-stellar-background-ratio="0.5">
             <div class="container">
                 <div class="row align-items-center justify-content-center text-center">
                     <div class="col-md-7">
@@ -73,7 +55,7 @@
         </div>
 
         <!-- Slide 4 -->
-        <div class="block-30 block-30-sm item" style="background-image: url('./assets/images/frp-images/background/bg4.jpg');" data-stellar-background-ratio="0.5">
+        <div class="block-30 block-30-sm item" style="background-image: url('<?php BASE_URL; ?>assets/images/frp-images/background/bg4.jpg');" data-stellar-background-ratio="0.5">
             <div class="container">
                 <div class="row align-items-center justify-content-center text-center">
                     <div class="col-md-7">

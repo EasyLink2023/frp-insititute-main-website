@@ -6,35 +6,8 @@
     session_start();
 } ?>
 <?php include('./include/layouts/headersecond.php'); ?>
-<style>
-    .all-sect{
-        background-color: #eeeeee;
-        padding: 2em 0;
-        margin: 2em 0;
-    }
-    .bg-card{
-        background-color: #eeeeee;
-        color: #fff;
-        border: 0px !important;
-    }
-    .cards-hov:hover{
-        background-color: #25276d !important;
-        color: #fff !important;
-    }
-    .cards-hov:hover p ,.cards-hov:hover h5  ,.cards-hov:hover .section-title ,.cards-hov:hover li{
-        color: #fff !important;
-     }
-    @media (min-width: 1200px) {
-        .cards-hov{
-        border: 0px !important;
-    }
-    
-    
-}
-        
-    
-    
-</style>
+<link rel="stylesheet" href="<?php BASE_URL; ?>assets/css/innerpage-nohover.css">
+
 <!-- Main Section Start Here -->
 <div class="block-31" style="position: relative;">
     <div class="owl-carousel loop-block-31">

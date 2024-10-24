@@ -6,54 +6,7 @@
     session_start();
 } ?>
 <?php include('./include/layouts/headersecond.php'); ?>
-<style>
-    .all-sect{
-        background-color: #eeeeee;
-        padding: 2em 0;
-        margin: 2em 0;
-    }
-    
-    .card.card-resouce p, .card-body p.card-text{
-        color: #000 !important;
-    }
-    .section-lbl{
-        font-size: 26px;
-        font-weight: 500;
-
-    }
-    .card-resouce:hover , .cardshov:hover{
-        background-color: #25276d !important;
-        color: #fff !important;
-    }
-    .card-resouce:hover h5, .card-resouce:hover p , .cardshov:hover p ,.cardshov:hover h5{
-        color: #fff !important;
-     }
-    @media (min-width: 1200px) {
-        .card-resouce{
-        height: 165px;
-        border: 0px !important;
-    }
-}
-    @media (min-width:991.5px) and (max-width:1200px) {
-     .card-resouce{
-        height: 175px;
-        border: 0px !important;
-     }
-   }
-   @media (min-width:768px) and (max-width:991px) {
-     .card-resouce{
-        height: 230px;
-        border: 0px !important;
-     }
-   }
-   @media (max-width:768.5px) {
-     .card-resouce{
-        border: 0px !important;
-     }
-   }
-    
-
-</style>
+<link rel="stylesheet" href="<?php BASE_URL; ?>assets/css/innerpage-hover.css">
 <!-- Main Section Start Here -->
 <div class="block-31" style="position: relative;">
     <div class="owl-carousel loop-block-31">

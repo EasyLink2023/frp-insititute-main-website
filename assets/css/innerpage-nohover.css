@@ -1,0 +1,14 @@
+.all-sect{
+    background-color: #eeeeee;
+    padding: 2em 0;
+    margin: 2em 0;
+}
+.cards-hov{
+    border: 0px !important;
+    background-color: #25276d !important;
+    color: #fff !important;
+}
+.cards-hov p ,.cards-hov h5  ,.cards-hov .section-title ,.cards-hov li
+{
+    color: #fff !important;
+ }

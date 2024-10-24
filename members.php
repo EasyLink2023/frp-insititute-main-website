@@ -185,69 +185,7 @@ $patron_members = [
     session_start();
 } ?>
 <?php include('./include/layouts/headersecond.php'); ?>
-<style>
-    .all-sect{
-        background-color: #eeeeee;
-        padding: 2em 0;
-        margin: 2em 0;
-    }
-    .bg-card{
-        background-color: #eeeeee !important;
-        color: #fff;
-        border: 0px !important;
-    }
-    .nav-tabs .nav-link{
-    border: 1px solid transparent;
-    border-top-left-radius: 0px !important;
-    border-top-right-radius: 0px !important;
-    background: #25276d;
-    color: #fff;
-   }
-   .card-member:hover{
-        background-color: #25276d !important;
-        color: #fff !important;
-
-     }
-     .card-member:hover h5, .card-member:hover p{
-        color: #fff !important;
-     }
-    .card-member .card-title{
-        margin-bottom: 0px !important;
-    }
-    .card-member .card-text{
-        margin-bottom: 10px !important;
-        line-height: 26px;
-    }
-   @media (min-width:1200.5px) {
-     .card-member{
-        height: 240px;
-        border: 0px !important;
-     }
-     
-   }
-   @media (min-width:991.5px) and (max-width:1200px) {
-     .card-member{
-        height: 270px;
-        border: 0px !important;
-     }
-   }
-   @media (min-width:768px) and (max-width:991px) {
-     .card-member{
-        height: 421px;
-        border: 0px !important;
-     }
-   }
-   @media (max-width:768.5px) {
-     .card-member{
-        height: 270px;
-        border: 0px !important;
-     }
-   }
-   
-        
-    
-    
-</style>
+<link rel="stylesheet" href="<?php BASE_URL; ?>assets/css/innerpage-hover.css">
 
 <!-- Main Section Start Here -->
 <div class="block-31" style="position: relative;">

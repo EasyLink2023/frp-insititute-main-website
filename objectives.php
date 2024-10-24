@@ -6,13 +6,8 @@
     session_start();
 } ?>
 <?php include('./include/layouts/headersecond.php'); ?>
-<style>
-    .all-sect{
-        background-color: #25276d;
-        padding: 2em 0;
-        margin: 2em 0;
-    }
-</style>
+<link rel="stylesheet" href="<?php BASE_URL; ?>assets/css/innerpage-nohover.css">
+
 <!-- Main Section Start Here -->
 <div class="block-31" style="position: relative;">
     <div class="owl-carousel loop-block-31">
@@ -80,7 +75,7 @@
     <div class="container my-4">
         <div class="row">
             <div class="col-12">
-                <div class="card p-3">
+                <div class="card p-3 cards-hov">
                     <div class="card-body">
                         <h2 class="section-title text-center">Objectives</h2>
                         <p class="main-text-color">

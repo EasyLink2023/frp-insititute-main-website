@@ -37,33 +37,8 @@ $courses = [
     session_start();
 } ?>
 <?php include('./include/layouts/headersecond.php'); ?>
-<style>
-    .all-sect{
-        background-color: #eeeeee;
-        padding: 2em 0;
-        margin: 2em 0;
-    }
-        .cards-hov{
-        border: 0px !important;
-    }
-    .cards-hov:hover{
-        background-color: #25276d !important;
-        color: #fff !important;
-    }
-    .cards-hov:hover p ,.cards-hov:hover h5  ,.cards-hov:hover .section-title ,.cards-hov:hover li ,.cards-hov:hover a{
-        color: #fff !important;
-     }
-     .cards-select{
-        background-color: #25276d !important;
-        color: #fff !important;
-    }
-    .cards-select p ,.cards-select h5  ,.cards-select .section-title ,.cards-select li ,.cards-select a{
-        color: #fff !important;
-     }
-    
+<link rel="stylesheet" href="<?php BASE_URL; ?>assets/css/innerpage-nohover.css">
 
-
-</style>
 <!-- Main Section Start Here -->
 <div class="block-31" style="position: relative;">
     <div class="owl-carousel loop-block-31">
@@ -131,7 +106,7 @@ $courses = [
  <div class="container mt-4">
     <div class="row">
         <div class="col-8">
-            <div class="sticky-section card p-3 cards-hov">
+            <div class="sticky-section card p-3 cards-select">
                 <div class="card-body">
                     <h2 class="section-title text-center">Skill Development</h2>
                     <p class="main-text-color text-center">A well trained work force is an asset to any sector in the composites Industry</p>
@@ -150,14 +125,14 @@ $courses = [
             </div>
         </div>
         <div class="col-4">
-            <div class="card p-3 cards-select" >
+            <div class="card p-3 cards-hov" >
                 <div class="card-body">
                     <h3 class="section-title text-center">
                         List of study materials (Only Hard copy Available)
                     </h3>
                     <ul>
                         <?php foreach ($courses as $course) : ?>
-                            <li><a href="javascript:void(0)" class="main-text-color"><?php echo $course; ?></a></li>
+                            <li><a href="javascript:void(0)" class="text-white"><?php echo $course; ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>

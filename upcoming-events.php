@@ -6,6 +6,7 @@
     session_start();
 } ?>
 <?php include('./include/layouts/headersecond.php'); ?>
+<link rel="stylesheet" href="<?php BASE_URL; ?>assets/css/innerpage-hover.css">
 <!-- Main Section Start Here -->
 <div class="block-31" style="position: relative;">
     <div class="owl-carousel loop-block-31">
@@ -69,42 +70,46 @@
     </div>
 </div>
 <!-- Main Section End Here -->
-<div class="container mt-4">
+ <div class="all-sect">
+    <div class="container my-4">
 
-    <h2 class="text-center text-main-color mb-5">Upcoming Events</h2>
-    <div class="row">
-        <!-- ICERP 2025 Event -->
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-body">
-                    <div class="border-left pl-3">
-                        <h4 class="font-weight-bold text-main-color">ICERP 2025</h4>
-                        <p class="text-main-color"><strong>Date:</strong> 21st to 23rd January, 2025</p>
-                        <p class="text-main-color"><strong>Venue:</strong> Bombay Exhibition Center, Mumbai, Hall VI</p>
-                        <a href="http://www.icerpshow.com" class="text-primary">
-                            Learn more &rarr;
-                        </a>
+        <h2 class="text-center text-main-color mb-5">Upcoming Events</h2>
+        <div class="row">
+            <!-- ICERP 2025 Event -->
+            <div class="col-md-6">
+                <div class="card cardshov">
+                    <div class="card-body">
+                        <div class=" pl-3">
+                            <h4 class="font-weight-bold ">ICERP 2025</h4>
+                            <p class="text-main-color"><strong>Date:</strong> 21st to 23rd January, 2025</p>
+                            <p class="text-main-color"><strong>Venue:</strong> Bombay Exhibition Center, Mumbai, Hall VI</p>
+                            <a href="http://www.icerpshow.com" class="text-primary">
+                                Learn more &rarr;
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- ICERP 2023 Event -->
-        <div class="col-md-6">
-            <div class="card border border-left">
-                <div class="card-body">
-                    <div class="border-left pl-3">
-                        <h4 class="font-weight-bold text-main-color">ICERP 2023</h4>
-                        <p class="text-main-color"><strong>Date:</strong> 18th to 20th January, 2023</p>
-                        <p class="text-main-color"><strong>Venue:</strong> Bombay Exhibition Center, Mumbai, Hall IV and Hall V</p>
-                        <a href="http://www.icerpshow.com" class="text-primary">
-                            Learn more &rarr;
-                        </a>
+            <!-- ICERP 2023 Event -->
+            <div class="col-md-6">
+                <div class="card cardshov">
+                    <div class="card-body">
+                        <div class=" pl-3">
+                            <h4 class="font-weight-bold ">ICERP 2023</h4>
+                            <p class="text-main-color"><strong>Date:</strong> 18th to 20th January, 2023</p>
+                            <p class="text-main-color"><strong>Venue:</strong> Bombay Exhibition Center, Mumbai, Hall IV and Hall V</p>
+                            <a href="http://www.icerpshow.com" class="text-primary">
+                                Learn more &rarr;
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+
+ </div>
+
 
 <?php include('./include/layouts/footer.php'); ?>
